@@ -1,2 +1,2 @@
 # PHP
-PHP learning
+Car Rental implemented with Django
