@@ -1,0 +1,25 @@
+1. Create project
+  django-admin startproject car-rental
+2. Running the server
+  python manaage.py runserver
+
+3 put this script in this path /etc/apache/apache2.conf in order to run in apache server rather than built in development server
+  WSGIScriptAlias / /var/www/html/django7/django7/wsgi.py  
+  WSGIPythonPath /var/www/html/django7/  
+    
+  <Directory /var/www/html/django7>  
+     <Files wsgi.py>  
+                  Require all granted  
+     </Files>  
+  </Directory>
+
+4. set up virtual environement
+
+5. create all the neccesary database table
+  python manage.py migrate
+  
+5. create admin user
+  python manage.py createsperuser
+  
+6. create an app
+  python manage.py startapp myapp
